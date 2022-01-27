@@ -33,16 +33,16 @@ const Countries = [
   { label: "Famous Places", value: 43 },
 ];
 const FinalList = [
-  //{title: "Dominos", price: "$", location: "2800 SW 14th St, Bentonville", label: "Restaurants", rating: 3.5, DeliveryOrTakeout: "Takeout/Delivery", distance: 2.7, Category: "Pizza", StartTime: "10AM", EndTime: "12AM", image: require("./Dominos.jpg")},
-  {title: "Pizza Hut", price: "$", location: "1717 W Walnut St A, Rogers", label: "Restaurants", rating: 3.5, DeliveryOrTakeout: "Takeout/Delivery", distance: 11.4, Category: "Pizza", StartTime: "10AM", EndTime: "12AM", image: require("./PizzaHut.jpeg")},
-  {title: "Panda Express", price: "$", location: "319 S Walton Blvd, Bentonville", label: "Restaurants", rating: 4.1, DeliveryOrTakeout: "Takeout", distance: 1.9, Category: "Chinese", StartTime: "11AM", EndTime: "10PM", image: require("./Panda.jpeg")},
-  {title: "P.F. Chang's", price: "$$", location: "2203 S Promenade Street, Rogers", label: "Restaurants", rating: 4.3, DeliveryOrTakeout: "Delivery", distance: 7.4, Category: "Chinese", StartTime: "11AM", EndTime: "10PM", image: require("./PFChang's.png")},
-  {title: "Las Fajitas", price: "$$", location: "2003 SW Regional Airport Blvd, Bentonville", label: "Restaurants", rating: 4.0, DeliveryOrTakeout: "Takeout/Delivery", distance: 5.2, Category: "Mexican", StartTime: "11AM", EndTime: "9PM", image: require("./LasFajitas.jpg")},
-  {title: "Ruth Chris Steak House", price: "$$$$", location: "3529 Pinnacle Hills Pkwy, Rogers", label: "Restaurants", rating: 4.6, DeliveryOrTakeout: "Delivery", distance: 11.6, Category: "Steak-House", StartTime: "4PM", EndTime: "10PM", image: require("./RuthChris.jpeg")},
-  {title: "Tavola Trattoria", price: "$$$", location: "108 SE A St, Bentonville", label: "Restaurants", rating: 4.5, DeliveryOrTakeout: "Takeout", distance: 2.5, Category: "Italian", StartTime: "11AM", EndTime: "9PM", image: require("./Tavola.jpg")},
-  {title: "Olive Garden", price: "$$", location: "1716 S 46th St, Rogers", label: "Restaurants", rating: 4.2, DeliveryOrTakeout: "Delivery", distance: 7.8, Category: "Italian", StartTime: "11AM", EndTime: "10PM", image: require("./OliveGarden.png")},
-  {title: "Shogun", price: "$$$", location: "3606 SE Metro Pkwy, Bentonville", label: "Restaurants", rating: 2.5, DeliveryOrTakeout: "Takeout", distance: 5.9, Category: "Japanese", StartTime: "11AM", EndTime: "9PM", image: require("./Shogun.jpeg")},
-  {title: "Sushi House", price: "$$", location: "2501 SE 14th St, Bentonville,", label: "Restaurants", rating: 5.0, DeliveryOrTakeout: "Delivery", distance: 4.7, Category: "Japanese", StartTime: "11AM", EndTime: "9PM", image: require("./TokyoHouse.jpeg")},
+  {title: "Dominos", price: "$", location: "2800 SW 14th St, Bentonville", label: "Restaurants", rating: 3.5, DeliveryOrTakeout: "Takeout/Delivery", distance: 2.7, Category: "Pizza", StartTime: "10AM", EndTime: "12AM", image: "Dominos.jpg"},
+  {title: "Pizza Hut", price: "$", location: "1717 W Walnut St A, Rogers", label: "Restaurants", rating: 3.5, DeliveryOrTakeout: "Takeout/Delivery", distance: 11.4, Category: "Pizza", StartTime: "10AM", EndTime: "12AM", image: "PizzaHut.jpeg"},
+  {title: "Panda Express", price: "$", location: "319 S Walton Blvd, Bentonville", label: "Restaurants", rating: 4.1, DeliveryOrTakeout: "Takeout", distance: 1.9, Category: "Chinese", StartTime: "11AM", EndTime: "10PM", image: "Panda.jpeg"},
+  {title: "P.F. Chang's", price: "$$", location: "2203 S Promenade Street, Rogers", label: "Restaurants", rating: 4.3, DeliveryOrTakeout: "Delivery", distance: 7.4, Category: "Chinese", StartTime: "11AM", EndTime: "10PM", image: "PFChang's.png"},
+  {title: "Las Fajitas", price: "$$", location: "2003 SW Regional Airport Blvd, Bentonville", label: "Restaurants", rating: 4.0, DeliveryOrTakeout: "Takeout/Delivery", distance: 5.2, Category: "Mexican", StartTime: "11AM", EndTime: "9PM", image: "LasFajitas.jpg"},
+  {title: "Ruth Chris Steak House", price: "$$$$", location: "3529 Pinnacle Hills Pkwy, Rogers", label: "Restaurants", rating: 4.6, DeliveryOrTakeout: "Delivery", distance: 11.6, Category: "Steak-House", StartTime: "4PM", EndTime: "10PM", image: "RuthChris.jpeg"},
+  {title: "Tavola Trattoria", price: "$$$", location: "108 SE A St, Bentonville", label: "Restaurants", rating: 4.5, DeliveryOrTakeout: "Takeout", distance: 2.5, Category: "Italian", StartTime: "11AM", EndTime: "9PM", image: "Tavola.jpg"},
+  {title: "Olive Garden", price: "$$", location: "1716 S 46th St, Rogers", label: "Restaurants", rating: 4.2, DeliveryOrTakeout: "Delivery", distance: 7.8, Category: "Italian", StartTime: "11AM", EndTime: "10PM", image: "OliveGarden.png"},
+  {title: "Shogun", price: "$$$", location: "3606 SE Metro Pkwy, Bentonville", label: "Restaurants", rating: 2.5, DeliveryOrTakeout: "Takeout", distance: 5.9, Category: "Japanese", StartTime: "11AM", EndTime: "9PM", image: "Shogun.jpeg"},
+  {title: "Sushi House", price: "$$", location: "2501 SE 14th St, Bentonville,", label: "Restaurants", rating: 5.0, DeliveryOrTakeout: "Delivery", distance: 4.7, Category: "Japanese", StartTime: "11AM", EndTime: "9PM", image: "TokyoHouse.jpeg"},
 ]
 const theme = createTheme({
   palette: {
@@ -130,7 +130,15 @@ class App extends React.Component {
 
       <Card sx={{ minWidth: 275 }}>
           <CardContent>
-          <img src = {window.location.origin + "/images/" + "Dominos.jpg"}/>
+          <CardMedia
+            component="img"
+            width = {"25%"}
+            height = {"25%"}
+            src = {"/images/" + item.image}
+            alt="green iguana"
+            style = {{flex: 1, resizeMode: "contain"}}
+            
+          />
             <Typography variant="h5" component="div">
               <h3>Title: {item.title}</h3>
             </Typography>
